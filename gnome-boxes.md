@@ -1,4 +1,6 @@
-# Como compartilhar arquivos no GNOME Boxes (Host/Guest)
+# Gnome Boxes
+
+## Como compartilhar arquivos no GNOME Boxes (Host/Guest)
 
 Gerenciar máquinas virtuais pode ser um divisor de águas para testar novos sistemas operacionais ou distribuições Linux, mas a transferência de arquivos entre o sistema operacional convidado e o hospedeiro costuma ser um obstáculo.
 
@@ -135,3 +137,29 @@ Nesses casos, você pode usar o endereço do servidor diretamente:
 1. No Gerenciador de Arquivos (Nautilus), pressione `Ctrl + l` para destacar o painel de endereço.
 2. Digite o seguinte endereço `dav://`[`localhost:9843`](http://localhost:9843):
 3. Isso abrirá a pasta compartilhada no gerenciador de arquivos. Após abrir a pasta você pode adicionar a mesma no gerenciador de arquivos (Nautilus, Dolphin, etc) para acessá-la facilmente no futuro, sem precisar digitar o endereço novamente.
+
+## Como utilizar as imagems/discos em outro HD
+
+> Caso já existam maquinas virtuais criadas lembre-se de mover as mesmas ou fazer backup das mesmas:
+
+```bash
+mv ~/.local/share/gnome-boxes /novo/local/gnome-boxes
+```
+
+Flatpak:
+
+```bash
+mv ~/.var/app/org.gnome.Boxes/data/gnome-boxes /novo/local/gnome-boxes
+```
+
+Caso não existam maquinas virtuais criadas:
+
+```bash
+ln -s /novo/local/gnome-boxes ~/.local/share/gnome-boxes
+```
+
+Flatpak:
+
+```bash
+ln -s /novo/local/gnome-boxes ~/.var/app/org.gnome.Boxes/data/gnome-boxes
+```
