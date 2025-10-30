@@ -1,0 +1,29 @@
+## Arch Linux
+
+```bash
+sudo pacman -S \
+base-devel
+```
+
+## Fedora
+
+```bash
+sudo dnf group install \
+development-tools
+```
+
+> dnf5: `sudo dnf install @development-tools`.
+
+## openSUSE
+
+```bash
+sudo zypper install \
+-t pattern devel_basis
+```
+
+## Ubuntu
+
+```bash
+sudo apt install \
+build-essential
+```
