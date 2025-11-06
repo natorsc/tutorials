@@ -1,20 +1,93 @@
 # Arch Linux
 
+## KDE
+
 ```bash
 sudo pacman -S \
 noto-fonts-emoji \
 noto-fonts-cjk \
 git \
-python-pipx
+python \
+python-pip \
+python-pipx \
+python-lsp-server \
+pyside6 \
+kirigami \
+flatpak-builder \
+qqc2-desktop-style \
+appstream \
+podman-compose \
+podman \
+flatpak \
+kdeconnect \
+spectacle \
+power-profiles-daemon \
+speech-dispatcher \
+firefox \
+firefox-i18n-pt-br \
+partitionmanager \
+dosfstools \
+exfatprogs \
+ntfs-3g \
+bluez \
+bluez-utils
 ```
 
-## Flatpak
-
-> A versão Gnome já vem com Flatpak e Flathub.
+### Flatpak
 
 ```bash
-sudo pacman -S flatpak
+flatpak install flathub \
+com.spotify.Client \
+com.google.Chrome \
+org.sqlitebrowser.sqlitebrowser \
+org.kde.ktorrent \
+org.kde.gwenview \
+org.kde.okular \
+org.kde.kalk \
+org.kde.optiimage \
+org.kde.alligator \
+org.libreoffice.LibreOffice \
+org.videolan.VLC \
+org.localsend.localsend_app
 ```
+
+---
+
+## GTK
+
+```bash
+sudo pacman -S \
+noto-fonts-emoji \
+noto-fonts-cjk \
+git \
+flatpak \
+python \
+python-pip \
+python-pipx \
+python-lsp-server \
+cairo \
+pkgconf \
+gobject-introspection \
+gtk4 \
+libadwaita \
+blueprint-compiler \
+podman-compose \
+podman \
+flatpak \
+kdeconnect \
+spectacle \
+power-profiles-daemon \
+speech-dispatcher \
+firefox \
+firefox-i18n-pt-br \
+dosfstools \
+exfatprogs \
+ntfs-3g \
+bluez \
+bluez-utils
+```
+
+### Flatpak
 
 ```bash
 flatpak install flathub \
@@ -22,8 +95,17 @@ org.gnome.Boxes \
 org.gnome.Builder \
 com.spotify.Client \
 com.google.Chrome \
-net.cozic.joplin_desktop \
-org.sqlitebrowser.sqlitebrowser
+org.libreoffice.LibreOffice \
+org.localsend.localsend_app
+```
+
+---
+
+## Bluetooth
+
+```bash
+sudo systemctl enable bluetooth.service
+sudo systemctl start bluetooth.service
 ```
 
 ## Pipx
@@ -34,8 +116,13 @@ org.sqlitebrowser.sqlitebrowser
 pipx install \
 poetry \
 pdm \
-uv \
-ruff
+uv
+```
+
+## Zed
+
+```bash
+curl -f https://zed.dev/install.sh | sh
 ```
 
 ## AUR
@@ -57,3 +144,4 @@ git clone https://aur.archlinux.org/paru.git
 cd paru
 makepkg -si
 ```
+
