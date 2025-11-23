@@ -37,18 +37,19 @@ bluez-utils
 
 ```bash
 flatpak install flathub \
-com.spotify.Client \
-com.google.Chrome \
-org.sqlitebrowser.sqlitebrowser \
-org.kde.ktorrent \
-org.kde.gwenview \
-org.kde.okular \
-org.kde.kalk \
-org.kde.optiimage \
 org.kde.alligator \
+org.kde.gwenview \
+org.kde.kalk \
+org.kde.ktorrent \
+org.kde.okular \
+org.kde.optiimage \
+com.google.Chrome \
+com.spotify.Client \
 org.libreoffice.LibreOffice \
+org.localsend.localsend_app \
+org.sqlitebrowser.sqlitebrowser \
 org.videolan.VLC \
-org.localsend.localsend_app
+net.cozic.joplin_desktop
 ```
 
 ---
