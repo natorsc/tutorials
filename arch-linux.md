@@ -89,16 +89,19 @@ bluez-utils
 ### Gnome Boxes
 
 ```bash
-sudo pacman -S \
+sudo pacman -S --needed \
 gnome-boxes \
 qemu-full \
 libvirt \
+virtiofsd \
+spice-gtk \
+spice-protocol \
 dnsmasq
 ```
 
 ```bash
+sudo usermod -aG libvirt,kvm $(whoami)
 sudo systemctl enable --now libvirtd
-sudo usermod -aG libvirt $(whoami)
 ```
 
 ### Flatpak
