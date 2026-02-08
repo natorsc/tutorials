@@ -29,12 +29,22 @@ Para que seu sistema operacional convidado (seja Linux ou Windows) consiga compa
 
 Você pode instalá-lo usando o gerenciador de pacotes da sua distribuição.
 
+### Arch Linux
+
+```bash
+sudo pacman -S --needed \
+qemu-guest-agent \
+spice-vdagent \
+mesa
+```
+
+
 ### Debian - Ubuntu
 
 ```bash
 sudo apt install \
-spice-webdavd \
-spice-client-gtk \
+qemu-system-x86 \
+qemu-guest-agent \
 spice-vdagent
 ```
 
@@ -44,20 +54,15 @@ spice-vdagent
 
 ```bash
 sudo dnf install \
-spice-webdavd \
-spice-gtk \
+qemu-guest-agent \
 spice-vdagent
 ```
 
-### Arch Linux
+Independente da distribuição Linux executar no terminal:
 
 ```bash
-sudo pacman -Syu --needed \
-spice \
-spice-gtk \
-spice-protocol \
-spice-vdagent \
-gvfs-dnssd
+sudo systemctl enable --now qemu-guest-agent
+sudo systemctl enable --now spice-vdagentd
 ```
 
 ### Microsoft Windows
