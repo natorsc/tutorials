@@ -90,7 +90,7 @@ bluez-utils
 
 ```bash
 sudo pacman -S \
-virt-manager \
+gnome-boxes \
 qemu-full \
 libvirt \
 dnsmasq
