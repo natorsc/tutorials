@@ -75,8 +75,6 @@ blueprint-compiler \
 podman-compose \
 podman \
 flatpak \
-kdeconnect \
-spectacle \
 power-profiles-daemon \
 speech-dispatcher \
 firefox \
@@ -87,6 +85,17 @@ ntfs-3g \
 bluez \
 bluez-utils
 ```
+
+### Gnome Boxes
+
+```bash
+sudo pacman -S \
+virt-manager \
+qemu-full \
+libvirt \
+dnsmasq
+```
+
 
 ### Flatpak
 
@@ -109,6 +118,8 @@ sudo systemctl enable bluetooth.service
 sudo systemctl start bluetooth.service
 ```
 
+---
+
 ## Pipx
 
 > `pipx ensurepath`.
@@ -120,11 +131,22 @@ pdm \
 uv
 ```
 
+---
+
 ## Zed
 
 ```bash
 curl -f https://zed.dev/install.sh | sh
 ```
+
+## Visual Studio Code
+
+```bash
+sudo pacman -S \
+code
+```
+
+---
 
 ## AUR
 
