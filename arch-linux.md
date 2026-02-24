@@ -30,7 +30,8 @@ dosfstools \
 exfatprogs \
 ntfs-3g \
 bluez \
-bluez-utils
+bluez-utils \
+btrfs-progs
 ```
 
 ### Flatpak
