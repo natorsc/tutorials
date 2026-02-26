@@ -31,7 +31,9 @@ exfatprogs \
 ntfs-3g \
 bluez \
 bluez-utils \
-btrfs-progs
+btrfs-progs \
+krdc \
+krfb
 ```
 
 ### Flatpak
