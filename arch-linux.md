@@ -52,7 +52,8 @@ org.libreoffice.LibreOffice \
 org.localsend.localsend_app \
 org.sqlitebrowser.sqlitebrowser \
 org.videolan.VLC \
-net.cozic.joplin_desktop
+net.cozic.joplin_desktop \
+io.qt.QtCreator
 ```
 
 ---
